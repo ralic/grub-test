@@ -1,1 +1,9 @@
-../configure 
+
+## REF1 : BUILD SUPPORT
+## https://www.gnu.org/software/grub/manual/grub.html#Obtaining-and-Building-GRUB
+## REF2 : PLATFORM SUPPORT 
+## https://wiki.gentoo.org/wiki/GRUB2
+## Author : Ralic Lo<raliclo@gmail.com>
+## License : GPLv3
+
+../configure --enable-libzfs --enable-liblzma --enable-grub-themes --enable-grub-mount --enable-grub-mkfont --enable-grub-emu-pci --enable-grub-emu-sdl --enable-boot-time --enable-cache-stats --enable-mm-debug --enable-efiemu --enable-dependency-tracking --with-platform="emu efi-64 efi-32 pc qemu"
